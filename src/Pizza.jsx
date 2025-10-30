@@ -2,7 +2,7 @@ export default function Pizza() {
   return (
     <div>
       <img
-        src="vite.svg"
+        src="spinaci.jpg"
         alt="react logo"
       />
       <h1>Spinachi Pizza</h1>
