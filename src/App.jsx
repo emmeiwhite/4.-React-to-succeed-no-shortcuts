@@ -5,6 +5,9 @@ export default function App() {
     <div>
       <h1>The Real World Pizza Application</h1>
       <Pizza />
+      <Pizza />
+      <Pizza />
+      <Pizza />
     </div>
   )
 }
