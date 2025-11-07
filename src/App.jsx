@@ -6,7 +6,17 @@ function Header() {
 }
 
 function Footer() {
-  return <footer>{new Date().toLocaleTimeString()} We are currently open</footer>
+  const hour = new Date().getHours()
+
+  const openHour = 10
+  const closeHour = 20
+
+  const isOpen = hour >= openHour && hour < closeHour
+  return (
+    <footer>
+      We are currently <strong>{isOpen ? 'Open' : 'Closed'} </strong>
+    </footer>
+  )
   // return React.createElement('footer', null, 'We are currently open!')
 }
 
