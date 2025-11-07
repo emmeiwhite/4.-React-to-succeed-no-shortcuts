@@ -1,5 +1,4 @@
 import Pizza from './Pizza'
-import React from 'react'
 
 function Header() {
   return <h1>Fast React Pizza Co.</h1>
