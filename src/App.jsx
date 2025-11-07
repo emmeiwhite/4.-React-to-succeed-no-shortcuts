@@ -6,16 +6,26 @@ function Header() {
 }
 
 function Footer() {
-  return React.createElement('footer', null, 'We are currently open!')
+  return <footer>{new Date().toLocaleTimeString()} We are currently open</footer>
+  // return React.createElement('footer', null, 'We are currently open!')
+}
+
+function Menu() {
+  return (
+    <div>
+      <h2>Our Menu</h2>
+      <Pizza />
+      <Pizza />
+      <Pizza />
+      <Pizza />
+    </div>
+  )
 }
 export default function App() {
   return (
     <div>
       <Header />
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Menu />
       <Footer />
     </div>
   )
