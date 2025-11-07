@@ -3,10 +3,10 @@ export default function Pizza() {
     <div>
       <img
         src="spinaci.jpg"
-        alt="react logo"
+        alt="spinach pizza"
       />
       <h1>Spinachi Pizza</h1>
-      <p>lorem10</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, unde!</p>
     </div>
   )
 }
