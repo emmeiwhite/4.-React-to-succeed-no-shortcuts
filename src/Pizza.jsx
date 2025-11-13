@@ -1,6 +1,6 @@
 export default function Pizza(props) {
   return (
-    <div>
+    <div className="pizza">
       <img
         src={props.image}
         alt={props.name}

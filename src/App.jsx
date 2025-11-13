@@ -27,8 +27,16 @@ function Menu() {
   return (
     <div className="menu">
       <h2>Our Menu</h2>
-      <Pizza image="funghi.jpg" />
-      <Pizza image="margherita.jpg" />
+      <Pizza
+        image="funghi.jpg"
+        name="Funghi ki Tungi"
+        desc="es mai bada hai maza. Jab khawo aik baar, dil chahe baar bar"
+      />
+      <Pizza
+        image="margherita.jpg"
+        name="Marghe ki Murgi"
+        desc="Ya marghe ki murgi hai, aesa pehlai nahi khaya hoga"
+      />
     </div>
   )
 }
