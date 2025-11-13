@@ -10,3 +10,5 @@ export default function Pizza(props) {
     </div>
   )
 }
+
+// Revisit: React renders the component based on its current data. And data must be kept in sync with the application UI. And this data is made out of props and state.

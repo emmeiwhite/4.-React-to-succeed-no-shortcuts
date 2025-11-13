@@ -1,3 +1,4 @@
+import ProfileCard from './components/challenges/ProfileCard'
 import Pizza from './Pizza'
 
 function Header() {
@@ -46,6 +47,15 @@ export default function App() {
       <Header />
       <Menu />
       <Footer />
+
+      {/* --- Challenges --- */}
+
+      <ProfileCard
+        img="spinaci.jpg"
+        name="John Sh."
+        about="Tutor, Full Stack Web Developer. Life goes on. Never quit! Put a lot of efforts"
+        skills={['html', 'css', 'js', 'node']}
+      />
     </div>
   )
 }
