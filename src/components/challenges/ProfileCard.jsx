@@ -8,13 +8,23 @@ export default function ProfileCard({ img, name, about, skills }) {
       <h1>{name}</h1>
       <p>{about}</p>
 
-      {skills.map(skill => (
-        <Skill skillName={skill} />
-      ))}
+      <div className="skill-wrapper">
+        {skills.map(skill => (
+          <Skill skill={skill} />
+        ))}
+      </div>
     </div>
   )
 }
 
-function Skill({ skillName }) {
-  return <div>{skillName}</div>
+function Skill({ skill }) {
+  const { skillName, color, level } = skill
+  return (
+    <div
+      style={{ backgroundColor: color }}
+      className="skill-card">
+      <h3>{skillName}</h3>
+      <span>Level: {level}</span>
+    </div>
+  )
 }

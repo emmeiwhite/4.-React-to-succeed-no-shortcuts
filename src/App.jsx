@@ -41,6 +41,14 @@ function Menu() {
     </div>
   )
 }
+
+const skills = [
+  { skillName: 'HTML', color: '#E34C26', level: 3 },
+  { skillName: 'CSS', color: '#264de4', level: 2 },
+  { skillName: 'JavaScript', color: '#f7df1e', level: 3 },
+  { skillName: 'Node.js', color: '#68a063', level: 2 }
+]
+
 export default function App() {
   return (
     <div className="container">
@@ -54,7 +62,7 @@ export default function App() {
         img="spinaci.jpg"
         name="John Sh."
         about="Tutor, Full Stack Web Developer. Life goes on. Never quit! Put a lot of efforts"
-        skills={['html', 'css', 'js', 'node']}
+        skills={skills}
       />
     </div>
   )
