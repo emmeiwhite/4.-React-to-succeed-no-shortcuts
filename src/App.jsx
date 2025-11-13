@@ -1,7 +1,11 @@
 import Pizza from './Pizza'
 
 function Header() {
-  return <h1>Fast React Pizza Co.</h1>
+  return (
+    <header className="header">
+      <h1> Fast React Pizza Co.</h1>
+    </header>
+  )
 }
 
 function Footer() {
@@ -12,7 +16,7 @@ function Footer() {
 
   const isOpen = hour >= openHour && hour < closeHour
   return (
-    <footer>
+    <footer className="footer">
       We are currently <strong>{isOpen ? 'Open' : 'Closed'} </strong>
     </footer>
   )
@@ -21,7 +25,7 @@ function Footer() {
 
 function Menu() {
   return (
-    <div>
+    <div className="menu">
       <h2>Our Menu</h2>
       <Pizza />
       <Pizza />
@@ -32,7 +36,7 @@ function Menu() {
 }
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />
